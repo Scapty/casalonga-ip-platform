@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { analyzePatentClaims } from "@/lib/claude";
 import type { ClaimsInput } from "@/lib/types";
 
-export const maxDuration = 90;
+export const maxDuration = 120;
 
 export async function POST(request: NextRequest) {
   try {
